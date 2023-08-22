@@ -11,6 +11,7 @@ provider "docker" {
   host = "npipe:////.//pipe//docker_engine"
 }
 
+# <block type> "<provider>_<resource type>" "<resource name>"
 resource "docker_image" "nginx" {
   name         = "nginx"
   keep_locally = false

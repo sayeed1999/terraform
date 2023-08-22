@@ -14,6 +14,8 @@
 
 # implicit dependency: my-pet is created before this resource
 # using for_each loop
+
+# <block type> "<provider>_<resource type>" "<resource name>"
 resource "local_file" "pet" {
   filename = each.value
   for_each = toset(var.filename)

@@ -2,6 +2,7 @@ provider "aws" {
   region = "us-east-1" # Update this to your desired region
 }
 
+# <block type> "<provider>_<resource type>" "<resource name>"
 resource "aws_instance" "example" {
   ami           = "ami-sample" # Use the appropriate AMI ID for your desired OS and region
   instance_type = "t2.medium"

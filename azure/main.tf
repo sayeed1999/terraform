@@ -14,6 +14,7 @@ provider "azurerm" {
   features {}
 }
 
+# <block type> "<provider>_<resource type>" "<resource name>"
 resource "azurerm_resource_group" "rg" {
   name     = "myTFResourceGroup"
   location = "westus2"
